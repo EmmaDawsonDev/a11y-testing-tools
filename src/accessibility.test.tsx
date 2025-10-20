@@ -10,6 +10,7 @@ it("should render an accessible button", async () => {
   expect(results).toHaveNoViolations();
 });
 
+//This should throw an error because there is no accessible name
 it("should render an accessible button", async () => {
   const { container } = render(<Button></Button>);
   const results = await axe(container);
